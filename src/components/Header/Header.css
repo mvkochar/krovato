@@ -1,0 +1,182 @@
+.header-bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header-nav {
+    list-style-type: none;
+    gap: 30px;
+}
+
+.header-nav li a,
+.header-help-title {
+    font-size: 16px;
+    color: #535353;
+}
+
+.header-help {
+    gap: 20px;
+}
+
+.header-social {
+    gap: 10px;
+}
+
+.header-language-fm {
+    margin-left: 30px;
+
+    select {
+        width: fit-content;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 19px;
+        text-transform: uppercase;
+        color: #535353;
+    }
+}
+
+.header-main {
+    height: calc(50px + 27px + 25px);
+    padding-top: 27px;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+
+.header-catalog-link {
+    display: block;
+    width: 145px;
+    height: 46px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 54px;
+    background: #FFBC57 url('/public/images/menu-catalog.svg') no-repeat 20px;
+    border-radius: 8px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.header-search-fm {
+    width: 421px;
+    padding-left: 15px;
+    border: 1px solid #B1B1B1;
+    border-radius: 8px;
+    gap: 20px;
+
+    input {
+        display: block;
+        width: 80%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        border: none;
+        outline: none;
+        font-size: 16px;
+        color: #B1B1B1;
+    }
+
+    button {
+        display: block;
+    }
+}
+
+.header-phone {
+    gap: 10px;
+}
+
+.header-phone-desc {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 300;
+    font-size: 13px;
+    color: #535353;
+}
+
+.header-phone-number {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 2;
+    color: #2B2929;
+}
+
+.header-phone-recall {
+    margin-top: 10px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFBC57;
+}
+
+.header-favor-count,
+.header-cart-count {
+    width: 32px;
+    height: 32px;
+    padding-top: 9px;
+    background-color: #FFBC57;
+    border-radius: 100%;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 24px;
+    right: -13px;
+}
+
+.header-about {
+    gap: 20px;
+}
+
+.header-menu {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #fff;
+    border-top: 2px solid #F8F8F8;
+}
+
+.header-menu-list {
+    list-style-type: none;
+    gap: 40px;
+
+    li {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 28px;
+
+        &:nth-child(1) {
+            background: url('/public/images/akcii.png') no-repeat;
+            background-position: 0;
+        }
+
+        &:nth-child(2) {
+            padding-left: 32px;
+            background: url('/public/images/sale.png') no-repeat;
+            background-position: 0;
+        }
+
+        &:nth-child(3) {
+            background: url('/public/images/credit.png') no-repeat;
+            background-position: 0;
+        }
+    }
+}
+
+.header-menu-rooms {
+    list-style-type: none;
+    gap: 40px;
+}
+
+.header-menu-list li a,
+.header-menu-rooms li a {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 19px;
+    color: #535353;
+}
