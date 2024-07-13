@@ -1,0 +1,33 @@
+.categories-item {
+    width: 250px;
+    height: 300px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #FFFFFF url('/public/images/categories-item-bg.png') no-repeat;
+    background-position-y: 108px;
+    box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.categories-item-title {
+     color: #2B2929;
+}
+
+.home-categories-bottom {
+    margin-top: 60px;
+}
+
+.categories-item-product {
+    color: #B1B1B1;
+}
+
+.categories-item-link {
+    display: block;
+    margin-top: 182px;
+    margin-left: 80%;
+
+}
