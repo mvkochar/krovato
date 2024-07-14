@@ -13,7 +13,7 @@
     color: #2B2929;
 }
 
-.home-popular  {
+.home-popular {
     margin-top: 70px;
 }
 
@@ -21,4 +21,57 @@
     margin-top: 40px;
     flex-wrap: wrap;
     row-gap: 24px;
+}
+
+.home-products {
+    margin-top: 70px;
+}
+
+.home-products-caption,
+.home-promotions-caption {
+    gap: 30px;
+}
+
+.home-products-all,
+.home-promotions-all {
+    gap: 10px;
+}
+
+.home-products-all .products-all-title,
+.home-promotions-all .promotions-all-title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 19px;
+    color: #FFBC57;
+}
+
+.home-products-box {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.home-promotions {
+    margin-top: 80px;
+}
+
+.home-promotions-controls {
+    gap: 20px;
+}
+
+.home-promotions-controls .controls-btn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 22.49px;
+    padding-right: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.home-promotions-box {
+    margin-top: 46px;
 }
