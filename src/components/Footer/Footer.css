@@ -1,0 +1,95 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 315px;
+    padding-right: 314px;
+    background-color: #2B2929;
+}
+
+.footer-social {
+    margin-top: 44px;
+}
+
+.footer-social-title,
+.footer-help-title,
+.footer-bl-list li a {
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+}
+
+.footer-social-box,
+.footer-help-box {
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.footer-help {
+    margin-top: 30px;
+}
+
+.footer-payments {
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.footer-bl-title,
+.footer-contacts-list li,
+.footer-contacts-btn,
+.footer-contacts-desc {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-bl-list,
+.footer-contacts-list {
+    list-style-type: none;
+    margin-top: 10px;
+
+    li {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer-contacts {
+    gap: 15px;
+
+    &:nth-child(2) {
+        margin-top: 32px;
+    }
+
+    &:nth-child(3) {
+        margin-top: 30px;
+    }
+}
+
+.footer-contacts-btn {
+    display: block;
+    margin-top: 10px;
+    color: #FFBC57;
+}
+
+.footer-contacts-desc {
+    width: 174px;
+    line-height: 1.4;
+}
+
+.footer-rights {
+    margin-top: 40px;
+    margin-left: -315px;
+    margin-right: -314px;
+    padding-top: 20px;
+    border-top: 2px solid #3D3D3D;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #B1B1B1;
+}
