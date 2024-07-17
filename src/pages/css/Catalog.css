@@ -48,3 +48,128 @@
         color: #FFBC57;
     }
 }
+
+.catalog-content {
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.catalog-filter {
+    width: 300px;
+    border: 1px solid #E3E2E2;
+
+    .filter-bl-caption {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 15px;
+        padding-right: 18px;
+    }
+
+    .filter-bl-content {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: #fff;
+        border-bottom: 1px solid #B1B1B1;
+    }
+
+    .price-filter-fm {
+        margin-bottom: 15px;
+        gap: 14px;
+
+        input {
+            display: block;
+            width: 90px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 1px solid #B1B1B1;
+            border-radius: 8px;
+            outline: none;
+            font-family: 'Proxima Nova Rg';
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: #2B2929;
+        }
+
+        button {
+            width: 60px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: #FFBC57;
+            border: 1px solid #FFBC57;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Proxima Nova Lt';
+            font-weight: 600;
+            font-size: 19px;
+            color: #fff;
+        }
+    }
+
+    .filter-choise-fm {
+        .check-bl {
+            gap: 10px;
+            margin-bottom: 17px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            input {
+                display: block;
+                width: 16px;
+                height: 16px;
+                appearance: none;
+                -webkit-appearance: none;
+
+
+                border: 1px solid #B1B1B1;
+
+                &:checked {
+                    background: #FFBC57 url("/public/images/check.svg") no-repeat;
+                    background-position: center center;
+                    border: 1px solid #FFBC57;
+                }
+            }
+
+            label {
+                font-family: 'Proxima Nova Lt';
+                font-weight: 600;
+                font-size: 16px;
+                color: #2B2929;
+            }
+        }
+
+        button {
+            display: block;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #FFBC57;
+            font-family: 'Proxima Nova Lt';
+            font-weight: 600;
+            font-size: 16px;
+            color: #FFBC57;
+        }
+    }
+}
+
+.catalog-filter-caption {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    gap: 15px;
+    background-color: #fff;
+}
+
+.catalog-filter-title,
+.catalog-filter .filter-bl-title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 19px;
+    color: #2B2929;
+}
+
+.catalog-filter-box {
+    flex-direction: column;
+}
