@@ -74,6 +74,11 @@
         border-bottom: 1px solid #B1B1B1;
     }
 
+    .bl-content__clear {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     .price-filter-fm {
         margin-bottom: 15px;
         gap: 14px;
@@ -144,8 +149,6 @@
 
         button {
             display: block;
-            padding-bottom: 10px;
-            border-bottom: 1px dashed #FFBC57;
             font-family: 'Proxima Nova Lt';
             font-weight: 600;
             font-size: 16px;
