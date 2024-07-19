@@ -101,4 +101,138 @@ const ProductsList:Product[] = [
 
 ]
 
-export default ProductsList
+const BedsList:Product[] = [
+    {
+        image: '/images/beds/1.webp',
+        size: '61 x 184 x 2130 мм',
+        title: 'Ліжко Стенлі',
+        isAvailable: true,
+        isSale: false,
+        price: '13 820',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/2.webp',
+        size: '61 x 184 x 2130 мм',
+        title: 'Ліжко Сільвія з підйомним механізмом',
+        isAvailable: true,
+        isSale: false,
+        price: '13 340',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/3.webp',
+        size: '61 x 184 x 2130 мм',
+        title: 'Ліжко Прага',
+        isAvailable: true,
+        isSale: false,
+        price: '8 030',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/4.webp',
+        size: '61 x 184 x 2130 мм',
+        title: 'Ліжко Палмер',
+        isAvailable: true,
+        isSale: false,
+        price: '6 300',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/5.webp',
+        size: '61 x 184 x 2130 мм',
+        title: 'Ліжко Капрі',
+        isAvailable: true,
+        isSale: false,
+        price: '12 370',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/6.webp',
+        size: '61 x 184 x 2130 мм',
+        title: 'Ліжко Джолі',
+        isAvailable: true,
+        isSale: false,
+        price: '6 500',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/7.webp',
+        size: '61 x 184 x 2130 мм',
+        title: 'Ліжко Гласо',
+        isAvailable: true,
+        isSale: false,
+        price: '5 770',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/8.webp',
+        size: '61 x 184 x 2130 мм',
+        title: "Карина з м'яким узголів'ям",
+        isAvailable: true,
+        isSale: false,
+        price: '8 368',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/9.webp',
+        size: '61 x 184 x 2130 мм',
+        title: "Акція Ліжко Гранд з механізмом",
+        isAvailable: true,
+        isSale: true,
+        price: '11 235',
+        salePrice: '10 790',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/10.webp',
+        size: '61 x 184 x 2130 мм',
+        title: "Ліжко Фіджі",
+        isAvailable: true,
+        isSale: false,
+        price: '7 230',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/11.webp',
+        size: '61 x 184 x 2130 мм',
+        title: "Ліжко Ларі",
+        isAvailable: true,
+        isSale: false,
+        price: '7 560',
+        salePrice: '',
+        isFavour: false
+    },
+
+    {
+        image: '/images/beds/12.webp',
+        size: '61 x 184 x 2130 мм',
+        title: "Ліжко Гранд",
+        isAvailable: true,
+        isSale: false,
+        price: '7 905',
+        salePrice: '',
+        isFavour: false
+    }
+]
+
+export {ProductsList, BedsList}

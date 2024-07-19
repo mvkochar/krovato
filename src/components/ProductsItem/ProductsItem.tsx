@@ -24,7 +24,7 @@ const ProductsItem = ({ image, size, title, isAvailable = true, isSale = false,
 
     return (
         <div className='products-item d-f jc-sb'>
-            <div><img src={image} alt="product" /></div>
+            <div><img src={image} alt="product" width={260} height={220} /></div>
             <div className="products-item-size">Розмір: {size}</div>
             <h5 className="products-item-title">{title}</h5>
             {isAvailable ? <div className='products-item-available'>В наявності</div> : null}

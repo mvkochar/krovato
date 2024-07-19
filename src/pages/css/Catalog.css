@@ -166,7 +166,9 @@
 }
 
 .catalog-filter-title,
-.catalog-filter .filter-bl-title {
+.catalog-filter .filter-bl-title,
+.catolog-choise-title,
+.catalog-sort-fm label {
     font-family: 'Proxima Nova Lt';
     font-weight: 600;
     font-size: 19px;
@@ -175,4 +177,108 @@
 
 .catalog-filter-box {
     flex-direction: column;
+}
+
+.catalog-sort-fm {
+    gap: 10px;
+
+    label {
+        display: block;
+        padding-left: 28px;
+        background: url('/public/images/sort-icon.png') no-repeat;
+    }
+
+    select {
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 17px;
+        color: #535353;
+    }
+}
+
+.catalog-filters-select {
+    margin-top: 30px;
+    gap: 10px;
+
+    .filters-select-item {
+        gap: 12.99px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10.99px;
+        background-color: #fff;
+        border: 1px solid #B1B1B1;
+        border-radius: 8px;
+
+        .select-item-title {
+            font-family: 'Proxima Nova Rg';
+            font-weight: 400;
+            font-size: 15px;
+            color: #2B2929;
+        }
+
+        button {
+            margin-top: 3px;
+        }
+    }
+
+    .select-item__clear {
+        background-color: #FFBC57;
+        border: none;
+    }
+}
+
+.catalog-box {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.catalog-more-btn {
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 79px;
+    background: #FFBC57 url("/public/images/reload.png") no-repeat 40px;
+    border: 1px solid #FFBC57;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 19px;
+    color: #fff;
+}
+
+.catalog-pagination {
+    width: fit-content;
+    gap: 10px;
+    margin: 30px auto;
+    margin-bottom: 0;
+}
+
+.catalog-pagination-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 2px;
+    background-color: #fff;
+    border: 1px solid #B1B1B1;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 17px;
+    color: #535353;
+
+    &:first-child,
+    &:last-child {
+        padding-top: 6px;
+    }
 }

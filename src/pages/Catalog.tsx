@@ -4,6 +4,8 @@ import { BedsSubList } from '../components/SubcategoriesList/SubcategoriesList'
 import SubcategoriesItem from '../components/SubcategoriesItem/SubcategoriesItem'
 import Slider from "@mui/material/Slider";
 import { Box } from '@mui/material';
+import { BedsList } from '../components/ProductsList/ProductsList';
+import ProductsItem from '../components/ProductsItem/ProductsItem';
 
 function valuetext(value: number) {
     return `${value} грн.`;
@@ -25,7 +27,7 @@ const Catalog = () => {
         setRange(newValue as number[]);
     };
 
-    const [filterOne, setFilterOne] = React.useState(true)
+    const [filterOne, setFilterOne] = React.useState(false)
     const handleFilterOne = () => {
         setFilterOne((prevState) => {
             return (
@@ -34,7 +36,7 @@ const Catalog = () => {
         })
     }
 
-    const [filterTwo, setFilterTwo] = React.useState(true)
+    const [filterTwo, setFilterTwo] = React.useState(false)
     const handleFilterTwo = () => {
         setFilterTwo((prevState) => {
             return (
@@ -43,7 +45,7 @@ const Catalog = () => {
         })
     }
 
-    const [filterThree, setFilterThree] = React.useState(true)
+    const [filterThree, setFilterThree] = React.useState(false)
     const handleFilterThree = () => {
         setFilterThree((prevState) => {
             return (
@@ -52,7 +54,7 @@ const Catalog = () => {
         })
     }
 
-    const [filterFour, setFilterFour] = React.useState(true)
+    const [filterFour, setFilterFour] = React.useState(false)
     const handleFilterFour = () => {
         setFilterFour((prevState) => {
             return (
@@ -61,7 +63,7 @@ const Catalog = () => {
         })
     }
 
-    const [filterFive, setFilterFive] = React.useState(true)
+    const [filterFive, setFilterFive] = React.useState(false)
     const handleFilterFive = () => {
         setFilterFive((prevState) => {
             return (
@@ -70,7 +72,7 @@ const Catalog = () => {
         })
     }
 
-    const [filterSix, setFilterSix] = React.useState(true)
+    const [filterSix, setFilterSix] = React.useState(false)
     const handleFilterSix = () => {
         setFilterSix((prevState) => {
             return (
@@ -79,7 +81,7 @@ const Catalog = () => {
         })
     }
 
-    const [filterSeven, setFilterSeven] = React.useState(true)
+    const [filterSeven, setFilterSeven] = React.useState(false)
     const handleFilterSeven = () => {
         setFilterSeven((prevState) => {
             return (
@@ -88,7 +90,7 @@ const Catalog = () => {
         })
     }
 
-    const [filterEight, setFilterEight] = React.useState(true)
+    const [filterEight, setFilterEight] = React.useState(false)
     const handleFilterEight = () => {
         setFilterEight((prevState) => {
             return (
@@ -106,6 +108,32 @@ const Catalog = () => {
         })
     }
 
+    const [manufacturersMore, setManufacturersMore] = React.useState(false)
+    const handleManufacturersMore = () => {
+        setManufacturersMore((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [sizesMore, setSizesMore] = React.useState(false)
+    const handleSizesMore = () => {
+        setSizesMore((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [colorsMore, setColorsMore] = React.useState(false)
+    const handleColorsMore = () => {
+        setColorsMore((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
 
     return (
         <>
@@ -224,31 +252,42 @@ const Catalog = () => {
                                         <input type="checkbox" name="legko" id="legko" />
                                         <label htmlFor="legko">Legko</label>
                                     </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="miroMark" id="miroMark" />
-                                        <label htmlFor="miroMark">MiroMark</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="novelty" id="novelty" />
-                                        <label htmlFor="novelty">Novelty</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="softLine" id="softLine" />
-                                        <label htmlFor="softLine">Soft-line</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="venger" id="venger" />
-                                        <label htmlFor="venger">Venger</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="arbor" id="arbor" />
-                                        <label htmlFor="venger">Арбор Древ</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="town" id="town" />
-                                        <label htmlFor="town">Городок мебель</label>
-                                    </div>
-                                    <button type='button' className='btn-clear'>Показати всі</button>
+                                    {
+                                        manufacturersMore ?
+                                            <>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="miroMark" id="miroMark" />
+                                                    <label htmlFor="miroMark">MiroMark</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="novelty" id="novelty" />
+                                                    <label htmlFor="novelty">Novelty</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="softLine" id="softLine" />
+                                                    <label htmlFor="softLine">Soft-line</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="venger" id="venger" />
+                                                    <label htmlFor="venger">Venger</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="arbor" id="arbor" />
+                                                    <label htmlFor="venger">Арбор Древ</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="town" id="town" />
+                                                    <label htmlFor="town">Городок мебель</label>
+                                                </div>
+                                            </>
+                                            : null
+                                    }
+                                    <button
+                                        type='button' className='btn-clear'
+                                        onClick={handleManufacturersMore}
+                                    >
+                                        {manufacturersMore ? 'Сховати' : 'Показати всі'}
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -319,27 +358,38 @@ const Catalog = () => {
                                         <input type="checkbox" name="size5" id="size5" />
                                         <label htmlFor="size5">110x190 см</label>
                                     </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="size6" id="size6" />
-                                        <label htmlFor="size6">160x190 см</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="size7" id="size7" />
-                                        <label htmlFor="size7">150x200 см</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="size8" id="size8" />
-                                        <label htmlFor="size8">140x200 см</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="size9" id="size9" />
-                                        <label htmlFor="size9">140x190 см</label>
-                                    </div>
-                                    <div className="check-bl d-f align-center">
-                                        <input type="checkbox" name="size10" id="size10" />
-                                        <label htmlFor="size10">120x200 см</label>
-                                    </div>
-                                    <button type='button' className='btn-clear'>Показати всі</button>
+                                    {
+                                        sizesMore ?
+                                            <>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="size6" id="size6" />
+                                                    <label htmlFor="size6">160x190 см</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="size7" id="size7" />
+                                                    <label htmlFor="size7">150x200 см</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="size8" id="size8" />
+                                                    <label htmlFor="size8">140x200 см</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="size9" id="size9" />
+                                                    <label htmlFor="size9">140x190 см</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="size10" id="size10" />
+                                                    <label htmlFor="size10">120x200 см</label>
+                                                </div>
+                                            </>
+                                            : null
+                                    }
+                                    <button
+                                        type='button' className='btn-clear'
+                                        onClick={handleSizesMore}
+                                    >
+                                        {sizesMore ? 'Сховати' : 'Показати всі'}
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -406,7 +456,38 @@ const Catalog = () => {
                                         <input type="checkbox" name="color124" id="color124" />
                                         <label htmlFor="color120">124</label>
                                     </div>
-                                    <button type='button' className='btn-clear'>Показати всі</button>
+                                    {
+                                        colorsMore ?
+                                            <>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="colorWhite" id="colorWhite" />
+                                                    <label htmlFor="colorWhite">Білий</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="colorWhiteOlympus" id="colorWhiteOlympus" />
+                                                    <label htmlFor="colorWhiteOlympus">Білий Олімп</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="colorVilha" id="colorVilha" />
+                                                    <label htmlFor="colorVilha">Вільха</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="colorVengeMagiya" id="colorVengeMagiya" />
+                                                    <label htmlFor="colorVengeMagiya">Венге магія</label>
+                                                </div>
+                                                <div className="check-bl d-f align-center">
+                                                    <input type="checkbox" name="colorVengeHmf" id="colorVengeHmf" />
+                                                    <label htmlFor="colorVengeHmf">Венге хмф</label>
+                                                </div>
+                                            </>
+                                            : null
+                                    }
+                                    <button
+                                        type='button' className='btn-clear'
+                                        onClick={handleColorsMore}
+                                    >
+                                        {colorsMore ? 'Сховати' : 'Показати всі'}
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -479,6 +560,69 @@ const Catalog = () => {
                         </div>
                     </div>
                 </aside >
+                <div style={{ width: "960px" }}>
+                    <div className="d-f jc-sb">
+                        <h5 className='catolog-choise-title'>Ви вибрали:</h5>
+                        <form action="" className='catalog-sort-fm d-f'>
+                            <label htmlFor="sortType">Сортування:</label>
+                            <select name="sortType" id="sortType">
+                                <option value="1">За ціною (за зростанням)</option>
+                                <option value="2">За ціною (по спадаючій)</option>
+                                <option value="3">За популярністю</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div className="catalog-filters-select d-f">
+                        <div className="filters-select-item select-item__clear d-f">
+                            <div className="select-item-title">Очистити</div>
+                            <button className='btn-clear d-b'><img src="/images/close.png" alt="close" /></button>
+                        </div>
+                        <div className="filters-select-item d-f">
+                            <div className="select-item-title">Виробник: Corners</div>
+                            <button className='btn-clear d-b'><img src="/images/close.png" alt="close" /></button>
+                        </div>
+                        <div className="filters-select-item d-f">
+                            <div className="select-item-title">Без узголов'я</div>
+                            <button className='btn-clear d-b'><img src="/images/close.png" alt="close" /></button>
+                        </div>
+                        <div className="filters-select-item d-f">
+                            <div className="select-item-title">200x210 см</div>
+                            <button className='btn-clear d-b'><img src="/images/close.png" alt="close" /></button>
+                        </div>
+                    </div>
+                    <div className="catalog-box d-f jc-sb">
+                        {
+                            BedsList.map((bed) => {
+                                return (
+                                    <ProductsItem
+                                        image={bed.image}
+                                        size={bed.size}
+                                        title={bed.title}
+                                        isAvailable={bed.isAvailable}
+                                        isSale={bed.isSale}
+                                        salePrice={bed.salePrice}
+                                        price={bed.price}
+                                        isFavour={bed.isFavour}
+                                    />
+                                )
+                            })
+                        }
+                    </div>
+                    <button className='catalog-more-btn'>Показати ще товари</button>
+                    <div className="catalog-pagination d-f">
+                        <button className='catalog-pagination-btn'><img src="/images/angle-left.png" alt="angle-left" /></button>
+                        <button className="catalog-pagination-btn">1</button>
+                        <button className="catalog-pagination-btn">2</button>
+                        <button className="catalog-pagination-btn">3</button>
+                        <button className="catalog-pagination-btn">4</button>
+                        <button className="catalog-pagination-btn">5</button>
+                        <button className="catalog-pagination-btn">6</button>
+                        <button className="catalog-pagination-btn">7</button>
+                        <button className="catalog-pagination-btn">...</button>
+                        <button className="catalog-pagination-btn">18</button>
+                        <button className='catalog-pagination-btn'><img src="/images/angle-right.png" alt="angle-right" /></button>
+                    </div>
+                </div>
             </div >
         </>
     )

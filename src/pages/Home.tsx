@@ -3,8 +3,9 @@ import './css/Home.css'
 import CategoriesItem from '../components/CategoriesItem/CategoriesItem'
 import CategoriesList from '../components/CategoriesList/CategoriesList'
 import ProductsItem from '../components/ProductsItem/ProductsItem'
-import ProductsList from '../components/ProductsList/ProductsList'
+
 import { Link } from 'react-router-dom'
+import { ProductsList } from '../components/ProductsList/ProductsList'
 
 const Home = () => {
   const [sliderAkcii, setSliderAkcii] = React.useState(1)
