@@ -6,6 +6,8 @@ import ProductsItem from '../components/ProductsItem/ProductsItem'
 
 import { Link } from 'react-router-dom'
 import { ProductsList } from '../components/ProductsList/ProductsList'
+import LatestReviews from '../components/LatestReviews/LatestReviews'
+import Features from '../components/Features/Features'
 
 const Home = () => {
   const [sliderAkcii, setSliderAkcii] = React.useState(1)
@@ -123,117 +125,7 @@ const Home = () => {
           <div><img src="/images/akciya3.png" alt="akciya3" /></div>
         </div>
       </section>
-      <section className='home-reviews d-f'>
-        <div>
-          <h2 className="home-bl-title">Останні відгуки</h2>
-          <div className="home-reviews-company d-f">
-            <div><img src="/images/ava.png" alt="ava" /></div>
-            <div>
-              <h4 className="reviews-company-name">Магазин меблів для дому «KROVATO»</h4>
-              <div className="reviews-rating d-f align-center">
-                <h5 className="reviews-rating-num">5.0</h5>
-                <div className="d-f">
-                  <div><img src="/images/favorite.png" alt="favorite" /></div>
-                  <div><img src="/images/favorite.png" alt="favorite" /></div>
-                  <div><img src="/images/favorite.png" alt="favorite" /></div>
-                  <div><img src="/images/favorite.png" alt="favorite" /></div>
-                  <div><img src="/images/favorite.png" alt="favorite" /></div>
-                </div>
-              </div>
-              <p className="reviews-rating-desc">Базовано на відгуках: 269</p>
-            </div>
-          </div>
-          <div className="home-reviews-actions d-f align-center">
-            <a href="" className="home-reviews-write">Написати відгук</a>
-            <a href="" className="home-reviews-all">Всі відгуки</a>
-          </div>
-        </div>
-        <div>
-          <div className="home-revies-box d-f">
-            <div className="home-reviews-item">
-              <div className="d-f jc-sb">
-                <div className="author-info d-f">
-                  <div><img src="/images/avatar.png" alt="avatar" /></div>
-                  <div>
-                    <h6 className="author-name">Іван Стедниця</h6>
-                    <div className="review-rating d-f">
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                    </div>
-                  </div>
-
-                </div>
-                <h6 className="review-date">25.01.2022</h6>
-              </div>
-              <p className="reviews-item-desc">
-                Хочу відзначити злагоджену та чітку роботу всіх співробітників, з ким довелося контактувати при виборі
-                та купівлі дивану Orange-Line Родео SF17-LX6-PLNGR. Велику допомогу при виборі надала фахівець із продажу Уляна.
-              </p>
-              <div className="reviews-item-product d-f align-center">
-                <div><img src="/images/img-tovar.png" alt="tovar" /></div>
-                <h4 className="product-title">Диван Orange-Line Родео SF ...</h4>
-              </div>
-            </div>
-            <div className="home-reviews-item">
-              <div className="d-f jc-sb">
-                <div className="author-info d-f">
-                  <div><img src="/images/avatar.png" alt="avatar" /></div>
-                  <div>
-                    <h6 className="author-name">Іван Стедниця</h6>
-                    <div className="review-rating d-f">
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                    </div>
-                  </div>
-
-                </div>
-                <h6 className="review-date">25.01.2022</h6>
-              </div>
-              <p className="reviews-item-desc">
-                Хочу відзначити злагоджену та чітку роботу всіх співробітників, з ким довелося контактувати при виборі
-                та купівлі дивану Orange-Line Родео SF17-LX6-PLNGR. Велику допомогу при виборі надала фахівець із продажу Уляна.
-              </p>
-              <div className="reviews-item-product d-f align-center">
-                <div><img src="/images/img-tovar.png" alt="tovar" /></div>
-                <h4 className="product-title">Диван Orange-Line Родео SF ...</h4>
-              </div>
-            </div>
-            <div className="home-reviews-item">
-              <div className="d-f jc-sb">
-                <div className="author-info d-f">
-                  <div><img src="/images/avatar.png" alt="avatar" /></div>
-                  <div>
-                    <h6 className="author-name">Іван Стедниця</h6>
-                    <div className="review-rating d-f">
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                      <div><img src="/images/favorite.png" alt="favorite" /></div>
-                    </div>
-                  </div>
-
-                </div>
-                <h6 className="review-date">25.01.2022</h6>
-              </div>
-              <p className="reviews-item-desc">
-                Хочу відзначити злагоджену та чітку роботу всіх співробітників, з ким довелося контактувати при виборі
-                та купівлі дивану Orange-Line Родео SF17-LX6-PLNGR. Велику допомогу при виборі надала фахівець із продажу Уляна.
-              </p>
-              <div className="reviews-item-product d-f align-center">
-                <div><img src="/images/img-tovar.png" alt="tovar" /></div>
-                <h4 className="product-title">Диван Orange-Line Родео SF ...</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <LatestReviews/>
       <section className='home-blog container-m'>
         <div className="d-f jc-sb align-center">
           <div className="home-blog-caption d-f align-center" >
@@ -320,26 +212,8 @@ const Home = () => {
             <path d="M28.225 39.275C28.4628 39.5026 28.7431 39.681 29.05 39.8C29.6587 40.0501 30.3413 40.0501 30.95 39.8C31.2569 39.681 31.5372 39.5026 31.775 39.275L39.275 31.775C39.7458 31.3043 40.0102 30.6658 40.0102 30C40.0102 29.3343 39.7458 28.6958 39.275 28.225C38.8042 27.7543 38.1658 27.4898 37.5 27.4898C36.8342 27.4898 36.1958 27.7543 35.725 28.225L32.5 31.475V22.5C32.5 21.837 32.2366 21.2011 31.7678 20.7322C31.2989 20.2634 30.663 20 30 20C29.337 20 28.7011 20.2634 28.2322 20.7322C27.7634 21.2011 27.5 21.837 27.5 22.5V31.475L24.275 28.225C24.0426 27.9907 23.7661 27.8047 23.4614 27.6778C23.1568 27.5509 22.83 27.4855 22.5 27.4855C22.17 27.4855 21.8432 27.5509 21.5386 27.6778C21.2339 27.8047 20.9574 27.9907 20.725 28.225C20.4907 28.4574 20.3047 28.7339 20.1778 29.0386C20.0508 29.3432 19.9855 29.67 19.9855 30C19.9855 30.33 20.0508 30.6568 20.1778 30.9615C20.3047 31.2661 20.4907 31.5426 20.725 31.775L28.225 39.275ZM30 55C34.9445 55 39.778 53.5338 43.8893 50.7867C48.0005 48.0397 51.2048 44.1353 53.097 39.5671C54.9892 34.9989 55.4843 29.9723 54.5196 25.1228C53.555 20.2732 51.174 15.8187 47.6777 12.3223C44.1814 8.82603 39.7268 6.44501 34.8773 5.48038C30.0277 4.51575 25.0011 5.01083 20.4329 6.90302C15.8648 8.79521 11.9603 11.9995 9.21326 16.1108C6.46622 20.222 5 25.0555 5 30C5 36.6304 7.63392 42.9893 12.3223 47.6777C14.6438 49.9991 17.3998 51.8406 20.4329 53.097C23.4661 54.3534 26.717 55 30 55ZM30 10C33.9556 10 37.8224 11.173 41.1114 13.3706C44.4004 15.5682 46.9638 18.6918 48.4776 22.3463C49.9913 26.0009 50.3874 30.0222 49.6157 33.9018C48.844 37.7814 46.9392 41.3451 44.1421 44.1421C41.3451 46.9392 37.7814 48.844 33.9018 49.6157C30.0222 50.3874 26.0009 49.9914 22.3463 48.4776C18.6918 46.9638 15.5682 44.4004 13.3706 41.1114C11.173 37.8224 10 33.9556 10 30C10 24.6957 12.1071 19.6086 15.8579 15.8579C19.6086 12.1071 24.6957 10 30 10Z" fill="#FFBC57" />
           </svg>
         </button>
-        <div className="home-about-features d-f jc-sb container-p">
-          <div className="about-features-item d-f align-center">
-            <div><img src="/images/features1.png" alt="features1" /></div>
-            <h4 className="features-item-title">Безкоштовна доставка</h4>
-          </div>
-          <div className="about-features-item d-f align-center">
-            <div><img src="/images/features2.png" alt="features2" /></div>
-            <h4 className="features-item-title">Безкоштовна збірка</h4>
-          </div>
-          <div className="about-features-item d-f align-center">
-            <div><img src="/images/features3.png" alt="features3" /></div>
-            <h4 className="features-item-title">Післягарантійне обслуговування</h4>
-          </div>
-          <div className="about-features-item d-f align-center">
-            <div><img src="/images/features4.png" alt="features4" /></div>
-            <h4 className="features-item-title">Знижки клієнтам</h4>
-          </div>
-        </div>
+        <Features/>
       </section>
-
     </>
   )
 }

@@ -6,6 +6,8 @@ import Slider from "@mui/material/Slider";
 import { Box } from '@mui/material';
 import { BedsList } from '../components/ProductsList/ProductsList';
 import ProductsItem from '../components/ProductsItem/ProductsItem';
+import LatestReviews from '../components/LatestReviews/LatestReviews';
+import Features from '../components/Features/Features';
 
 function valuetext(value: number) {
     return `${value} грн.`;
@@ -134,6 +136,71 @@ const Catalog = () => {
             )
         })
     }
+
+    const [moreSeo, setMoreSeo] = React.useState(false)
+    const handleMoreSeo = () => {
+        setMoreSeo((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [catalogMore, setCatalogMore] = React.useState(false)
+    const handleCatalogMore = () => {
+        setCatalogMore((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+    let maxProducts = catalogMore ? BedsList.length : 12
+
+    const [answerOne, setAnswerOne] = React.useState(false)
+    const handleAnswerOne = () => {
+        setAnswerOne((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [answerTwo, setAnswerTwo] = React.useState(false)
+    const handleAnswerTwo = () => {
+        setAnswerTwo((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [answerThree, setAnswerThree] = React.useState(false)
+    const handleAnswerThree = () => {
+        setAnswerThree((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [answerFour, setAnswerFour] = React.useState(false)
+    const handleAnswerFour = () => {
+        setAnswerFour((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [answerFive, setAnswerFive] = React.useState(false)
+    const handleAnswerFive = () => {
+        setAnswerFive((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
 
     return (
         <>
@@ -592,7 +659,7 @@ const Catalog = () => {
                     </div>
                     <div className="catalog-box d-f jc-sb">
                         {
-                            BedsList.map((bed) => {
+                            BedsList.filter((elem) => elem.id < maxProducts).map((bed) => {
                                 return (
                                     <ProductsItem
                                         image={bed.image}
@@ -608,10 +675,12 @@ const Catalog = () => {
                             })
                         }
                     </div>
-                    <button className='catalog-more-btn'>Показати ще товари</button>
+                    <button className='catalog-more-btn' onClick={handleCatalogMore}>
+                        {catalogMore ? "Менше товарів" : "Показати ще товари"}
+                    </button>
                     <div className="catalog-pagination d-f">
                         <button className='catalog-pagination-btn'><img src="/images/angle-left.png" alt="angle-left" /></button>
-                        <button className="catalog-pagination-btn">1</button>
+                        <button className="catalog-pagination-btn pagination-btn__active">1</button>
                         <button className="catalog-pagination-btn">2</button>
                         <button className="catalog-pagination-btn">3</button>
                         <button className="catalog-pagination-btn">4</button>
@@ -622,8 +691,121 @@ const Catalog = () => {
                         <button className="catalog-pagination-btn">18</button>
                         <button className='catalog-pagination-btn'><img src="/images/angle-right.png" alt="angle-right" /></button>
                     </div>
+                    <div className="catalog-seo">
+                        <h3 className="catalog-seo-title">Як правильно обрати ліжко?</h3>
+                        <p className="catalog-seo-desc">
+                            При виборі ліжка в інтернет магазині Вам в першу чергу потрібно вибрати матеріал.
+                            Найбільшою популярністю користуються дерев'яні ліжка, виготовлені з вільхи, ясена чи дуба.
+                            Такі моделі чудово прикрасять Вашу спальню у квартирі чи приватному будинку.
+                            Для орендованих квартир, під здачу, більше підійде ліжко з металу, так як воно просто «не вбивається»,
+                            а також має дуже демократичну ціну. Для Вашої зручності ліжко може комплектуватись висувними
+                            ящиками або підйомним механізмом. Ящики можуть бути з одного боку ліжка або з двох.
+                            Також є моделі, з висувними ящиками спереду. Ліжка з підйомним механізмом, це відмінне рішення,
+                            для невеликих кімнат, вони дозволяють заощадити простір і мають велику нішу для зберігання
+                            постільної білизни. Всі дерев'яні ліжка комплектуються буковими ламелями. Спальне місце з ламельною
+                            основою може витримувати навантаження до 150 кг на одне спальне місце. Відстань між ламелями,
+                            у своїй має бути 2,5-3 див. {moreSeo ? "Кожне ліжко може бути забарвлене у різні кольори: чорні, білі, сірі, венге, у кольорі горіх. Завдяки цьому ліжко можна підібрати під будь-який інтер'єр." : null}
+                        </p>
+                        <button className='catalog-seo-btn btn-clear' onClick={handleMoreSeo}>
+                            <img src="/images/more-icon.png" alt="more-icon" />
+                        </button>
+                    </div>
                 </div>
             </div >
+            <LatestReviews />
+            <section className="catalog-faq">
+                <h3 className="catalog-faq-title">Питання, які часто задають про Ліжка</h3>
+                <div className="catalog-faq-content d-f">
+                    <div className="catalog-faq-item">
+                        <div className="d-f jc-sb align-center">
+                            <div className="faq-item-caption d-f align-center">
+                                <div><img src="/images/question.png" alt="question" /></div>
+                                <h5 className="faq-item-title">Чи є у вас послуги доставки і збірки ліжка?</h5>
+                            </div>
+                            <button className='btn-clear d-b' onClick={handleAnswerOne}>
+                                <img src={answerOne ? "/images/arrow-up.png" : "/images/arrow-down.png"} alt="arrow" />
+                            </button>
+                        </div>
+                        <p className={answerOne ? "faq-item-desc" : "d-n"}>
+                            Так, ми пропонуємо ліжка з доставкою до вашого під'їзду Доставка здійснюється
+                            у зручний для вас час, а наші кваліфіковані спеціалісти можуть зібрати покупку у вашому домі.
+                            Вартість та умови доставки і збірки можна дізнатися на сторінці Доставка та збірка.
+                        </p>
+                    </div>
+                    <div className="catalog-faq-item">
+                        <div className="d-f jc-sb align-center">
+                            <div className="faq-item-caption d-f align-center">
+                                <div><img src="/images/question.png" alt="question" /></div>
+                                <h5 className="faq-item-title">Чи є у вас фізичний магазин у Києві?</h5>
+                            </div>
+                            <button className='btn-clear d-b' onClick={handleAnswerTwo}>
+                                <img src={answerTwo ? "/images/arrow-up.png" : "/images/arrow-down.png"} alt="arrow" />
+                            </button>
+                        </div>
+                        <p className={answerTwo ? "faq-item-desc" : "d-n"}>
+                            Ви можете обрати та купити ліжко у інтернет магазині, або у нашому шоурумі за адресою
+                            м. Київ, пров. Ізяславський 52, поверх 1 , де ви зможете ознайомитись з великим асортиментом
+                            ліжок Також наші кваліфіковані консультанти завжди готові допомогти вам з вибором і відповісти
+                            на всі ваші запитання. Схема доїзду та години роботи магазину представлені у розділі "Контакти"
+                            на нашому сайті. Ми завжди раді вітати вас у нашому шоурумі!
+                        </p>
+                    </div>
+                    <div className="catalog-faq-item">
+                        <div className="d-f jc-sb align-center">
+                            <div className="faq-item-caption d-f align-center">
+                                <div><img src="/images/question.png" alt="question" /></div>
+                                <h5 className="faq-item-title">Чи є можливість придбати ліжко в розстрочку?</h5>
+                            </div>
+                            <button className='btn-clear d-b' onClick={handleAnswerThree}>
+                                <img src={answerThree ? "/images/arrow-up.png" : "/images/arrow-down.png"} alt="arrow" />
+                            </button>
+                        </div>
+                        <p className={answerThree ? "faq-item-desc" : "d-n"}>
+                            Так, на сторінці товару, який ви обрали, натисніть кнопку "Купити в кредит" і заповніть форму.
+                            Після надходження від вас заявки наш менеджер зв'яжеться з вами якнайшвидше і розкаже умови
+                            купівлі ліжка в розстрочку.
+                        </p>
+                    </div>
+                    <div className="catalog-faq-item">
+                        <div className="d-f jc-sb align-center">
+                            <div className="faq-item-caption d-f align-center">
+                                <div><img src="/images/question.png" alt="question" /></div>
+                                <h5 className="faq-item-title">Які у вас є недорогі ліжка?</h5>
+                            </div>
+                            <button className='btn-clear d-b' onClick={handleAnswerFour}>
+                                <img src={answerFour ? "/images/arrow-up.png" : "/images/arrow-down.png"} alt="arrow" />
+                            </button>
+                        </div>
+                        <p className={answerFour ? "faq-item-desc" : "d-n"}>
+                            Ви можете знайти ліжко для будь-якого бюджету. Рекомендуємо зазирнути на сторінку
+                            "Недорогі ліжка" або "Ліжка по акції", де ви знайдете різноманітні варіанти за доступними цінами.
+                        </p>
+                    </div>
+                    <div className="catalog-faq-item">
+                        <div className="d-f jc-sb align-center">
+                            <div className="faq-item-caption d-f align-center">
+                                <div><img src="/images/question.png" alt="question" /></div>
+                                <h5 className="faq-item-title">Як обрати ліжко в спальню?</h5>
+                            </div>
+                            <button className='btn-clear d-b' onClick={handleAnswerFive}>
+                                <img src={answerFive ? "/images/arrow-up.png" : "/images/arrow-down.png"} alt="arrow" />
+                            </button>
+                        </div>
+                        <p className={answerFive ? "faq-item-desc" : "d-n"}>
+                            При виборі ліжка важливо враховувати кілька ключових моментів. По-перше, це колір,
+                            тому обирайте його так, щоб він гармонійно вписувався у загальний колорит кімнати.
+                            Другим важливим аспектом є розмір. Важливо враховувати вільний простір у спальні і ваші
+                            власні вподобаня. Не менш важливим є стиль ліжка. Виберіть стиль, що відповідає загальному
+                            дизайну кімнати. Наприклад, для класичного інтер'єру підійдуть ліжка з дерева з витонченими
+                            деталями, а для сучасного дизайну - ліжка з металевим каркасом або ліжка без ніжок
+                            у мінімалістичному стилі. Наші консультанти завжди готові допомогти вам у виборі і надати
+                            додаткову інформацію для того, щоб ваше ліжко підійшло відповідно до вашого інтер'єру та потреб.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <Features/>
+            <div style={{marginBottom: "40px"}}></div>
         </>
     )
 }

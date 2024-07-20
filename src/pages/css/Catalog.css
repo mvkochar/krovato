@@ -56,6 +56,7 @@
 
 .catalog-filter {
     width: 300px;
+    height: fit-content;
     border: 1px solid #E3E2E2;
 
     .filter-bl-caption {
@@ -245,7 +246,7 @@
     margin-bottom: 0;
     padding-top: 13px;
     padding-bottom: 13px;
-    padding-left: 79px;
+    padding-left: 49px;
     background: #FFBC57 url("/public/images/reload.png") no-repeat 40px;
     border: 1px solid #FFBC57;
     border-radius: 8px;
@@ -261,6 +262,12 @@
     gap: 10px;
     margin: 30px auto;
     margin-bottom: 0;
+
+    .pagination-btn__active {
+        background-color: #FFBC57;
+        border-color: #FFBC57;
+        color: #fff;
+    }
 }
 
 .catalog-pagination-btn {
@@ -280,5 +287,79 @@
     &:first-child,
     &:last-child {
         padding-top: 6px;
+    }
+}
+
+.catalog-seo {
+    margin-top: 70px;
+}
+
+.catalog-seo-title,
+.catalog-faq-title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #2B2929;
+}
+
+.catalog-seo-desc {
+    width: 960px;
+    margin: 30px auto;
+    margin-bottom: 0;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #2B2929;
+}
+
+.catalog-seo-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    margin-bottom: 0;
+}
+
+.catalog-faq {
+    margin-top: 70px;
+}
+
+.catalog-faq-content {
+    width: 1070px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 15px;
+
+    .faq-item__active {
+        border: 2px solid #FFBC57;
+    }
+}
+
+.catalog-faq-item {
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+    .faq-item-caption {
+        gap: 8px;
+    }
+
+    .faq-item-title {
+        font-weight: 600;
+        font-size: 40px;
+        font-size: 19px;
+        color: #2B2929;
+    }
+
+    .faq-item-desc {
+        margin-top: 10px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #2B2929;
     }
 }

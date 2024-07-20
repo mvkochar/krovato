@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -33,8 +34,8 @@ const Header = () => {
         </div>
       </div>
       <div className="header-main d-f jc-sb container-p">
-        <div><img src="/images/logo-header.svg" alt="logo-header" /></div>
-        <a href="" className="header-catalog-link">Каталог</a>
+        <div><Link to="/"><img src="/images/logo-header.svg" alt="logo-header" /></Link></div>
+        <Link to="/catalog" className="header-catalog-link">Каталог</Link>
         <form action="" className='header-search-fm d-f align-center'>
           <input type="text" name='searchQuery' placeholder='Пошук товарів' />
           <button type="button" className='btn-clear'><img src="/images/search.svg" alt="search" /></button>
@@ -48,7 +49,7 @@ const Header = () => {
           <button
             className='btn-clear d-b'
           >
-             <img src="/images/arrow.png" alt="arrow" />
+            <img src="/images/arrow.png" alt="arrow" />
           </button>
           <div className='header-about d-f'>
             <div className="pos-r">
