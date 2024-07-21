@@ -1,0 +1,114 @@
+.about-main {
+    margin-top: 65px;
+    padding-top: 71px;
+    padding-left: 50px;
+    padding-bottom: 71px;
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 8px;
+}
+
+.about-main-mask {
+    background-image: url("/public/images/about-main-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 155px;
+}
+
+.about-main-title,
+.about-advantages-title,
+.about-showroom-title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 40px;
+    color: #2B2929;
+}
+
+.about-main-subtitle,
+.about-main-desc {
+    width: 450px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    color: #2B2929;
+}
+
+.about-main-subtitle {
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+.about-main-desc {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.about-advantages {
+    margin-top: 70px;
+}
+
+.about-advantages-title {
+    text-align: center;
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+.about-advantages-box {
+    margin-top: 40px;
+}
+
+.about-advantages-item {
+    width: 300px;
+    text-align: center;
+    color: #2B2929;
+
+    .advantages-item-title {
+        margin-top: 20px;
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .advantages-item-desc {
+        margin-top: 20px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.about-showroom {
+    margin-top: 70px;
+}
+
+.about-showroom-subtitle {
+    margin-top: 30px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 26px;
+    color: #2B2929;
+}
+
+.about-showroom-desc {
+    margin-top: 20px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    color: #2B2929;
+}
+
+.about-showroom-link {
+    display: block;
+    width: 236px;
+    margin-top: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 54px;
+    background: #FFBC57 url("/public/images/arrow-open.png") no-repeat 90%;
+    border-radius: 8px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 19px;
+    color: #fff;
+}

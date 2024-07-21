@@ -8,7 +8,7 @@ const Header = () => {
       <div className="header-bar d-f jc-sb align-center container-m">
         <nav>
           <ul className="header-nav d-f">
-            <li><a href="">Про нас</a></li>
+            <li><Link to="/about">Про нас</Link></li>
             <li><a href="">Оплата</a></li>
             <li><a href="">Доставка та збірка</a></li>
             <li><a href="">Відгуки</a></li>
