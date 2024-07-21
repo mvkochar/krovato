@@ -1,0 +1,140 @@
+.payment-main {
+    margin-top: 65px;
+    padding-top: 71px;
+    padding-left: 50px;
+    padding-bottom: 71px;
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 8px;
+}
+
+.payment-main-mask {
+    background-image: url("/public/images/payment-main-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 155px;
+}
+
+.payment-main-title,
+.payment-kyiv-title,
+.payment-faq-title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 40px;
+    color: #2B2929;
+}
+
+.payment-main-subtitle,
+.payment-main-desc {
+    width: 450px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    color: #2B2929;
+}
+
+.payment-main-subtitle {
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+.payment-main-desc {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.payment-kyiv {
+    margin-top: 70px;
+}
+
+.payment-kyiv-title,
+.payment-faq-title {
+    text-align: center;
+}
+
+.payment-kyiv-box {
+    margin-top: 40px;
+}
+
+.payment-kyiv-item {
+    width: 300px;
+    text-align: center;
+    color: #2B2929;
+
+    .item-title {
+        margin-top: 20px;
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .item-desc {
+        margin-top: 20px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.payment-others {
+    margin-top: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.payment-others-item {
+    gap: 20px;
+    color: #2B2929;
+
+    .item-title {
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .item-desc {
+        margin-top: 10px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.payment-faq {
+    margin-top: 70px;
+}
+
+.payment-faq-content {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-faq-item {
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+    .faq-item-caption {
+        gap: 8px;
+    }
+
+    .faq-item-title {
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 40px;
+        font-size: 19px;
+        color: #2B2929;
+    }
+
+    .faq-item-desc {
+        margin-top: 10px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #2B2929;
+    }
+}
