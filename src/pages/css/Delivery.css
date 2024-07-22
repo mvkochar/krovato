@@ -1,0 +1,207 @@
+.delivery-main {
+    margin-top: 65px;
+    padding-top: 88px;
+    padding-left: 50px;
+    padding-bottom: 88px;
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 8px;
+}
+
+.delivery-main-mask {
+    background-image: url("/public/images/delivery-main-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 155px;
+}
+
+.delivery-main-title,
+.delivery-kyiv-title,
+.delivery-ukraine-title,
+.delivery-promotions-title,
+.delivery-assembly-title,
+.delivery-bringing-title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 40px;
+    color: #2B2929;
+}
+
+.delivery-main-subtitle,
+.delivery-main-desc,
+.delivery-promotions-item .promotions-item-title,
+.delivery-promotions-item .promotions-item-title span {
+    width: 450px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    color: #2B2929;
+}
+
+.delivery-main-subtitle {
+    margin-top: 30px;
+    font-size: 26px;
+}
+
+.delivery-main-desc,
+.delivery-promotions-item .promotions-item-title {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.delivery-kyiv {
+    margin-top: 70px;
+}
+
+.delivery-advantages {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.delivery-advantages-item {
+    gap: 20px;
+}
+
+.delivery-advantages-item .advantages-item-title,
+.delivery-note {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    color: #2B2929;
+}
+
+.delivery-note {
+    line-height: 1.4;
+}
+
+.delivery-ukraine {
+    margin-top: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #FFFFFF;
+}
+
+.delivery-ukraine-note {
+    max-width: 1290px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #2B2929;
+}
+
+.delivery-promotions {
+    margin-top: 70px;
+}
+
+.delivery-promotions-title,
+.delivery-assembly-title,
+.delivery-bringing-title {
+    text-align: center;
+}
+
+.delivery-promotions-box {
+    margin-top: 40px;
+}
+
+.delivery-promotions-item {
+    width: 234px;
+    text-align: center;
+}
+
+.delivery-promotions-item .promotions-item-title {
+    width: 100%;
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+.delivery-about {
+    margin-top: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #FFFFFF;
+}
+
+.delivery-assembly-tb {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+
+    td {
+        padding: 15px 10px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 16px;
+        color: #535353;
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+
+    tr {
+        &:nth-child(odd) {
+            background-color: #F8F8F8;
+        }
+    }
+}
+
+.delivery-bringing {
+    margin-top: 40px;
+}
+
+.delivery-bringing-tb {
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+
+    thead {
+        background-color: #535353;
+
+    }
+
+    tbody tr {
+        &:nth-child(odd) {
+            background-color: #F8F8F8;
+        }
+    }
+
+    th,
+    td {
+        padding: 15px 10px;
+    }
+
+    th {
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+
+        &:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            text-align: right;
+        }
+    }
+
+    td {
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 17px;
+        color: #535353;
+
+        &:nth-child(2) {
+            text-align: center;
+        }
+
+        &:last-child {
+            text-align: right;
+        }
+    }
+}

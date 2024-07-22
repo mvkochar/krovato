@@ -10,7 +10,7 @@ const Header = () => {
           <ul className="header-nav d-f">
             <li><Link to="/about">Про нас</Link></li>
             <li><Link to="/payment">Оплата</Link></li>
-            <li><a href="">Доставка та збірка</a></li>
+            <li><Link to="/delivery">Доставка та збірка</Link></li>
             <li><a href="">Відгуки</a></li>
             <li><a href="">Блог</a></li>
             <li><a href="">Контакти</a></li>
