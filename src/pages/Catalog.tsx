@@ -716,7 +716,7 @@ const Catalog = () => {
             <section className="catalog-faq">
                 <h3 className="catalog-faq-title">Питання, які часто задають про Ліжка</h3>
                 <div className="catalog-faq-content d-f">
-                    <div className="catalog-faq-item">
+                    <div className={answerOne ? "catalog-faq-item faq-item__active" : "catalog-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>
@@ -732,7 +732,7 @@ const Catalog = () => {
                             Вартість та умови доставки і збірки можна дізнатися на сторінці Доставка та збірка.
                         </p>
                     </div>
-                    <div className="catalog-faq-item">
+                    <div className={answerTwo ? "catalog-faq-item faq-item__active" : "catalog-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>
@@ -750,7 +750,7 @@ const Catalog = () => {
                             на нашому сайті. Ми завжди раді вітати вас у нашому шоурумі!
                         </p>
                     </div>
-                    <div className="catalog-faq-item">
+                    <div className={answerThree ? "catalog-faq-item faq-item__active" : "catalog-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>
@@ -766,7 +766,7 @@ const Catalog = () => {
                             купівлі ліжка в розстрочку.
                         </p>
                     </div>
-                    <div className="catalog-faq-item">
+                    <div className={answerFour ? "catalog-faq-item faq-item__active" : "catalog-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>
@@ -781,7 +781,7 @@ const Catalog = () => {
                             "Недорогі ліжка" або "Ліжка по акції", де ви знайдете різноманітні варіанти за доступними цінами.
                         </p>
                     </div>
-                    <div className="catalog-faq-item">
+                    <div className={answerFive ? "catalog-faq-item faq-item__active" : "catalog-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>

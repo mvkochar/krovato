@@ -109,6 +109,10 @@
     margin-top: 40px;
     flex-direction: column;
     gap: 15px;
+
+    .faq-item__active {
+        border: 2px solid #FFBC57;
+    }
 }
 
 .payment-faq-item {

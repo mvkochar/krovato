@@ -19,7 +19,8 @@
 .delivery-ukraine-title,
 .delivery-promotions-title,
 .delivery-assembly-title,
-.delivery-bringing-title {
+.delivery-bringing-title,
+.delivery-faq-title {
     font-family: 'Proxima Nova Lt';
     font-weight: 600;
     font-size: 40px;
@@ -95,7 +96,8 @@
 
 .delivery-promotions-title,
 .delivery-assembly-title,
-.delivery-bringing-title {
+.delivery-bringing-title,
+.delivery-faq-title {
     text-align: center;
 }
 
@@ -203,5 +205,49 @@
         &:last-child {
             text-align: right;
         }
+    }
+}
+
+.delivery-faq {
+    margin-top: 70px;
+}
+
+.delivery-faq-content {
+    width: 1070px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 15px;
+
+    .faq-item__active {
+        border: 2px solid #FFBC57;
+    }
+}
+
+.delivery-faq-item {
+    padding: 15px;
+    background: #FFFFFF;
+    box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+    .faq-item-caption {
+        gap: 8px;
+    }
+
+    .faq-item-title {
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 40px;
+        font-size: 19px;
+        color: #2B2929;
+    }
+
+    .faq-item-desc {
+        margin-top: 10px;
+        font-family: 'Proxima Nova Rg';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #2B2929;
     }
 }

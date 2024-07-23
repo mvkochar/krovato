@@ -125,7 +125,7 @@ const Payment = () => {
             <section className='payment-faq'>
                 <h2 className="payment-faq-title">У вас все ще залишилися питання?</h2>
                 <div className="payment-faq-content d-f container-m">
-                    <div className="payment-faq-item">
+                    <div className={answerOne ? "payment-faq-item faq-item__active" : "payment-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>
@@ -142,7 +142,7 @@ const Payment = () => {
                             обслуговування клієнтів.
                         </p>
                     </div>
-                    <div className="payment-faq-item">
+                    <div className={answerTwo ? "payment-faq-item faq-item__active" : "payment-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>
@@ -158,7 +158,7 @@ const Payment = () => {
                             що підтверджує покупку, наприклад, витяг з банківського випису чи електронний чек.
                         </p>
                     </div>
-                    <div className="payment-faq-item">
+                    <div className={answerThree ? "payment-faq-item faq-item__active" : "payment-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>
@@ -174,7 +174,7 @@ const Payment = () => {
                             щоб забезпечити оперативність та швидкість обробки повернень та повернення коштів нашим клієнтам.
                         </p>
                     </div>
-                    <div className="payment-faq-item">
+                    <div className={answerFour ? "payment-faq-item faq-item__active" : "payment-faq-item"}>
                         <div className="d-f jc-sb align-center">
                             <div className="faq-item-caption d-f align-center">
                                 <div><img src="/images/question.png" alt="question" /></div>

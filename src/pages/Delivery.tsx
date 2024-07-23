@@ -1,7 +1,35 @@
 import React from 'react'
 import './css/Delivery.css'
+import Features from '../components/Features/Features'
 
 const Delivery = () => {
+    const [answerOne, setAnswerOne] = React.useState(false)
+    const handleAnswerOne = () => {
+        setAnswerOne((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [answerTwo, setAnswerTwo] = React.useState(false)
+    const handleAnswerTwo = () => {
+        setAnswerTwo((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
+    const [answerThree, setAnswerThree] = React.useState(false)
+    const handleAnswerThree = () => {
+        setAnswerThree((prevState) => {
+            return (
+                !prevState
+            )
+        })
+    }
+
     return (
         <>
             <main className='delivery-main container-m'>
@@ -243,13 +271,65 @@ const Delivery = () => {
                             </tr>
                         </tbody>
                     </table>
-                    <p className="delivery-ukraine-note" style={{margin: "40px auto", marginBottom: 0, lineHeight: 1.9}}>
+                    <p className="delivery-ukraine-note" style={{ margin: "40px auto", marginBottom: 0, lineHeight: 1.9 }}>
                         * Занесення великогабаритних деталей, довжина яких перевищує 160*90см або вага перевищує 20кг коштує 30грн/поверх
                         .   **Занесення дивана, що складається з 1 підйомної одиниці 70 грн/поверх без ліфта
                         .   ***За відсутності вільного під'їзду до парадного, служба доставки самостійно розраховує вартість занесення до дверей.
                     </p>
                 </div>
             </div>
+            <section className='delivery-faq'>
+                <h2 className="delivery-faq-title">У вас все ще залишилися питання?</h2>
+                <div className="delivery-faq-content d-f">
+                    <div className={answerOne ? "delivery-faq-item faq-item__active" : "delivery-faq-item"}>
+                        <div className="d-f jc-sb align-center">
+                            <div className="faq-item-caption d-f align-center">
+                                <div><img src="/images/question.png" alt="question" /></div>
+                                <h5 className="faq-item-title">Чи можливий самовивіз меблів з вашого магазину?</h5>
+                            </div>
+                            <button className='btn-clear d-b' onClick={handleAnswerOne}>
+                                <img src={answerOne ? "/images/arrow-up.png" : "/images/arrow-down.png"} alt="arrow" />
+                            </button>
+                        </div>
+                        <p className={answerOne ? "faq-item-desc" : "d-n"}>
+                            Так, ми надаємо можливість самовивозу меблів з нашого магазину. Вам достатньо вказати цей
+                            варіант при оформленні замовлення, і ми підготуємо меблі для вас
+                        </p>
+                    </div>
+                    <div className={answerTwo ? "delivery-faq-item faq-item__active" : "delivery-faq-item"}>
+                        <div className="d-f jc-sb align-center">
+                            <div className="faq-item-caption d-f align-center">
+                                <div><img src="/images/question.png" alt="question" /></div>
+                                <h5 className="faq-item-title">Чи є можливість відстеження статусу доставки мого замовлення?</h5>
+                            </div>
+                            <button className='btn-clear d-b' onClick={handleAnswerTwo}>
+                                <img src={answerTwo ? "/images/arrow-up.png" : "/images/arrow-down.png"} alt="arrow" />
+                            </button>
+                        </div>
+                        <p className={answerTwo ? "faq-item-desc" : "d-n"}>
+                            Так, ми забезпечуємо можливість відстеження статусу доставки. Після відправлення замовлення
+                            ви отримаєте від нас сповіщення з інформацією та посиланням для відстеження.
+                        </p>
+                    </div>
+                    <div className={answerThree ? "delivery-faq-item faq-item__active" : "delivery-faq-item"}>
+                        <div className="d-f jc-sb align-center">
+                            <div className="faq-item-caption d-f align-center">
+                                <div><img src="/images/question.png" alt="question" /></div>
+                                <h5 className="faq-item-title">Як можна змінити адресу доставки після оформлення замовлення?</h5>
+                            </div>
+                            <button className='btn-clear d-b' onClick={handleAnswerThree}>
+                                <img src={answerThree ? "/images/arrow-up.png" : "/images/arrow-down.png"} alt="arrow" />
+                            </button>
+                        </div>
+                        <p className={answerThree ? "faq-item-desc" : "d-n"}>
+                            Якщо ви прагнете змінити адресу доставки, будь ласка, повідомте нас якнайшвидше. 
+                            Ми зробимо все можливе для внесення необхідних змін
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <Features/>
+            <div style={{marginBottom: "40px"}}></div>
         </>
     )
 }
