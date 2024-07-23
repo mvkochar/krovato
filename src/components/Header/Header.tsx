@@ -11,7 +11,7 @@ const Header = () => {
             <li><Link to="/about">Про нас</Link></li>
             <li><Link to="/payment">Оплата</Link></li>
             <li><Link to="/delivery">Доставка та збірка</Link></li>
-            <li><a href="">Відгуки</a></li>
+            <li><Link to="/reviews">Відгуки</Link></li>
             <li><a href="">Блог</a></li>
             <li><a href="">Контакти</a></li>
           </ul>

@@ -1,0 +1,182 @@
+.reviews-title {
+    margin-top: 75px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 40px;
+    color: #2B2929;
+}
+
+.reviews-content {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.reviews-tabs {
+
+    gap: 30px;
+    border-bottom: 3px solid #fff;
+
+    .tabs-btn__active {
+        border-bottom: 3px solid #FFBC57;
+        color: #FFBC57;
+    }
+}
+
+.reviews-tabs-btn {
+    padding-bottom: 20px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    color: #2B2929;
+}
+
+.reviews-box {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reviews-item {
+    padding: 30px;
+    gap: 30px;
+    width: 850px;
+    background: #FFFFFF;
+    border: 1px solid #E3E2E2;
+    box-shadow: -3px 4px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.reviews-item-caption,
+.reviews-item-info {
+    gap: 20px;
+}
+
+.reviews-item-author,
+.reviews-item-date {
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.reviews-item-author {
+    color: #2B2929;
+}
+
+.reviews-item-rating {
+    gap: 2px;
+}
+
+.reviews-item-date {
+    color: #535353;
+}
+
+.reviews-item-desc {
+    margin-top: 30px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #535353;
+}
+
+.reviews-product {
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.reviews-product-title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    color: #535353;
+}
+
+.reviews-pagination {
+    width: fit-content;
+    margin: 30px auto;
+    margin-bottom: 0;
+    gap: 10px;
+
+    .pagination-btn__active {
+        background-color: #FFBC57;
+        border-color: #FFBC57;
+        color: #fff;
+    }
+}
+
+.reviews-pagination-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 2px;
+    background-color: #fff;
+    border: 1px solid #B1B1B1;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 17px;
+    color: #535353;
+
+    &:first-child,
+    &:last-child {
+        padding-top: 6px;
+    }
+}
+
+.reviews-more-btn {
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    margin-bottom: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 49px;
+    background: #FFBC57 url("/public/images/reload.png") no-repeat 40px;
+    border: 1px solid #FFBC57;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 19px;
+    color: #fff;
+}
+
+.reviews-company {
+    gap: 30px;
+}
+
+.reviews-company-name,
+.reviews-company-name span {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    color: #2B2929;
+}
+
+.reviews-company-name span {
+    text-transform: uppercase;
+}
+
+.reviews-company-rating {
+    margin-top: 10px;
+    gap: 10px;
+
+    .rating-value {
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 19px;
+        color: #FF9900;
+    }
+
+    .rating-stars {
+        gap: 2px;
+    }
+}
+
+.reviews-company-about {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 300;
+    font-size: 13px;
+    color: #535353;
+}
