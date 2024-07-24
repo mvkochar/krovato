@@ -1,0 +1,35 @@
+.contacts-title {
+    margin-top: 75px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #2B2929;
+}
+
+.contacts-info  {
+    margin-top: 40px;
+    margin-left: 357px;
+    gap: 50px;
+}
+
+.contacts-item {
+    gap: 15px;
+}
+
+.contacts-item-name {
+    margin-top: 5px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #B1B1B1;
+}
+
+.contacts-item-desc {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #2B2929;
+}

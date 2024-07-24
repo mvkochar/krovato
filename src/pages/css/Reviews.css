@@ -180,3 +180,85 @@
     font-size: 13px;
     color: #535353;
 }
+
+.reviews-fm {
+    margin-top: 30px;
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 8px;
+
+    .input-box {
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    button {
+        display: block;
+        width: 350px;
+        margin-top: 30px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        background-color: #FFBC57;
+        border: 1px solid #FFBC57;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 19px;
+        color: #fff;
+    }
+
+}
+
+.reviews-fm-title {
+    width: 350px;
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #2B2929;
+}
+
+.reviews-fm input,
+.reviews-fm textarea {
+    display: block;
+    width: 350px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border: 1px solid #D1D5D5;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 16px;
+    color: #535353;
+}
+
+.reviews-fm input {
+    padding-bottom: 10px;
+}
+
+.reviews-fm textarea {
+    height: 150px;
+    resize: none;
+}
+
+.reviews-fm-rating {
+    width: fit-content;
+    margin: 30px auto;
+    margin-bottom: 0;
+
+    .rating-title {
+        font-family: 'Proxima Nova Lt';
+        font-weight: 600;
+        font-size: 19px;
+        text-align: center;
+        color: #535353;
+    }
+
+    .rating-stars {
+        margin-top: 10px;
+        gap: 3.34px;
+    }
+}

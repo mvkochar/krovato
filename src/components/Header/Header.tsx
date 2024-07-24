@@ -12,8 +12,8 @@ const Header = () => {
             <li><Link to="/payment">Оплата</Link></li>
             <li><Link to="/delivery">Доставка та збірка</Link></li>
             <li><Link to="/reviews">Відгуки</Link></li>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Контакти</a></li>
+            <li><Link to="/blog">Блог</Link></li>
+            <li><Link to="/">Контакти</Link></li>
           </ul>
         </nav>
         <div className='d-f align-center'>

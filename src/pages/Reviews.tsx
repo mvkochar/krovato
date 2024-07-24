@@ -1,5 +1,6 @@
 import React from 'react'
 import './css/Reviews.css'
+import Features from '../components/Features/Features'
 
 const Reviews = () => {
     return (
@@ -243,8 +244,30 @@ const Reviews = () => {
                             <div className="reviews-company-about">Базовано на відгуках: 269</div>
                         </div>
                     </div>
+                    <form action="" className="reviews-fm">
+                        <h3 className="reviews-fm-title">Залишіть свій відгук про магазин</h3>
+                        <div className="input-box d-f">
+                            <input type="text" name='reviewAuthor' placeholder="Ваше ім'я прізвище" />
+                            <input type="email" name="reviewEmail" placeholder='E-mail' />
+                            <textarea name="reviewText" placeholder='Відгук'></textarea>
+                        </div>
+                        <div className="reviews-fm-rating">
+                            <h5 className="rating-title">Ваша оцінка:</h5>
+                            <div className="rating-stars d-f">
+                                <div><img src="/images/empty-grey.png" alt="empty-grey" /></div>
+                                <div><img src="/images/empty-grey.png" alt="empty-grey" /></div>
+                                <div><img src="/images/empty-grey.png" alt="empty-grey" /></div>
+                                <div><img src="/images/empty-grey.png" alt="empty-grey" /></div>
+                                <div><img src="/images/empty-grey.png" alt="empty-grey" /></div>    
+                            </div>
+                        </div>
+                        <button type="button">Залишити відгук</button>
+                    </form>
+
                 </div>
             </div>
+            <Features/>
+            <div style={{marginBottom: "40px"}}></div>
         </div>
     )
 }
