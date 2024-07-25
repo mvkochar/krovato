@@ -13,7 +13,7 @@ const Header = () => {
             <li><Link to="/delivery">Доставка та збірка</Link></li>
             <li><Link to="/reviews">Відгуки</Link></li>
             <li><Link to="/blog">Блог</Link></li>
-            <li><Link to="/">Контакти</Link></li>
+            <li><Link to="/contacts">Контакти</Link></li>
           </ul>
         </nav>
         <div className='d-f align-center'>
