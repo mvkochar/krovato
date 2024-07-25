@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -80,19 +81,19 @@ const Footer = () => {
         <div>
           <h4 className="footer-bl-title">Інформація</h4>
           <ul className="footer-bl-list">
-            <li><a href="">Про нас</a></li>
-            <li><a href="">Оплата</a></li>
-            <li><a href="">Доставка та збірка</a></li>
-            <li><a href="">Відгуки</a></li>
-            <li><a href="">Блог</a></li>
-            <li><a href="">Контакти</a></li>
+            <li><Link to="/about">Про нас</Link></li>
+            <li><Link to="/payment">Оплата</Link></li>
+            <li><Link to="/delivery">Доставка та збірка</Link></li>
+            <li><Link to="/reviews">Відгуки</Link></li>
+            <li><Link to="/blog">Блог</Link></li>
+            <li><Link to="/contacts">Контакти</Link></li>
             <li><a href="">Мапа сайту</a></li>
           </ul>
         </div>
         <div>
           <h4 className="footer-bl-title">Категорії</h4>
           <ul className="footer-bl-list">
-            <li><a href="">Ліжка</a></li>
+            <li><Link to="/catalog">Ліжка</Link></li>
             <li><a href="">Матраци</a></li>
             <li><a href="">М’які меблі</a></li>
             <li><a href="">Шафи</a></li>
