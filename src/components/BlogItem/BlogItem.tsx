@@ -1,5 +1,6 @@
 import React from 'react'
 import './BlogItem.css'
+import { Link } from 'react-router-dom'
 
 type BlogItemProps = {
     id: number
@@ -14,7 +15,7 @@ const BlogItem = ({ id, image, title }: BlogItemProps) => {
             <h3 className="blog-item-title">{title}</h3>
             <div className="blog-item-more d-f">
                 <h5 className="item-more-title">Детальніше</h5>
-                <a href=""><img src="/images/upper-right.png" alt="upper-right" /></a>
+                <Link to={`/post/${id}`}><img src="/images/upper-right.png" alt="upper-right" /></Link>
             </div>
         </div>
     )
