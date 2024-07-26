@@ -6,5 +6,6 @@ import Delivery from "./Delivery";
 import Reviews from "./Reviews";
 import Blog from "./Blog";
 import Contacts from "./Contacts";
+import Product from "./Product";
 
-export {Home, Catalog, About, Payment, Delivery, Reviews, Blog, Contacts}
+export {Home, Catalog, About, Payment, Delivery, Reviews, Blog, Contacts, Product}

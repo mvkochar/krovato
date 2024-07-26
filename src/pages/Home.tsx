@@ -29,7 +29,6 @@ const Home = () => {
   }
 
   return (
-
     <>
       <main className='home-slider-akcii d-f jc-sb container-m' style={{ background: `url('/images/slider-akcii-${sliderAkcii}.png') no-repeat` }}>
         <button
@@ -79,6 +78,7 @@ const Home = () => {
             ProductsList.map((product) => {
               return (
                 <ProductsItem
+                  id={product.id}
                   image={product.image}
                   size={product.size}
                   title={product.title}

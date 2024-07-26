@@ -1,0 +1,79 @@
+.product-main {
+    margin-top: 75px;
+}
+
+.product-title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 40px;
+    color: #2B2929;
+}
+
+.product-available {
+    margin-top: 31px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 28px;
+    background: url('/public/images/check.png') no-repeat;
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #2B2929;
+}
+
+.product-price-wr {
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.product-old-price {
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #E03D3D;
+}
+
+.product-price {
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.4;
+    color: #2B2929;
+}
+
+.product-actions {
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.product-count {
+    width: 110px;
+    padding: 20px 17px;
+    gap: 15px;
+    border: 1px solid #B1B1B1;
+    border-radius: 8px;
+}
+
+.product-count-value {
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2B2929;
+}
+
+.product-buy-btn {
+    display: block;
+    width: 208px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 45px;
+    background: #FFBC57 url("/public/images/buy.png") no-repeat 54px;
+    border: 1px solid #FFBC57;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Proxima Nova Lt', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    color: #fff;
+}

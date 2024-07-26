@@ -662,6 +662,7 @@ const Catalog = () => {
                             BedsList.filter((elem) => elem.id < maxProducts).map((bed) => {
                                 return (
                                     <ProductsItem
+                                        id={bed.id}
                                         image={bed.image}
                                         size={bed.size}
                                         title={bed.title}

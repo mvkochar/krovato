@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { About, Blog, Catalog, Contacts, Delivery, Home, Payment, Reviews } from '../../pages'
+import { About, Blog, Catalog, Contacts, Delivery, Home, Payment, Product, Reviews } from '../../pages'
 
 const Main = () => {
   return (
@@ -37,6 +37,10 @@ const Main = () => {
           path='contacts'
           element={<Contacts/>}
         />
+       <Route
+        path='product/:id'
+        element={<Product />}
+      />
     </Routes>
   )
 }
